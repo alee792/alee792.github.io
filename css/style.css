@@ -1,0 +1,140 @@
+/****** Base ******/
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+	font-weight: lighter;
+	line-height: 150%;
+}
+
+p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	font-family: Roboto, serif;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/****** Layout ******/
+.wrap {
+	padding: 2rem; /** left and right padding only? **/
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+/****** Video ******/
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+}
+  
+.hi {
+    color: #fff;
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.cover-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.cover-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0 .25rem; /*mq: 0 2rem*/
+  font-size: 42vw; /*mq: 28vh*/
+}
+
+
+#muter{
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-50%,-50%);
+  font-size: 2em;
+}
+    
+ .cover .hi  span {
+      cursor: pointer;
+      text-decoration: none;
+    };
+    
+  .cover .hi   em {
+      font-style: normal;
+      };      
+ 
+
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  
+  .screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: auto;
+
+    opacity: 0;
+    transition: opacity .5s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .cover-item{
+    font-size: 27vh;
+    padding: 0 2rem;
+  }
+}
