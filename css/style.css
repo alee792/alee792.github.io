@@ -43,6 +43,41 @@ a {
 	margin: 0 auto;
 }
 
+/****** Override ******/
+.fixed-action-btn {
+  right: 0;
+  bottom: 18px;
+}
+
+.fixed-action-btn ul {
+  right: 12px;
+}
+.btn-flat i{
+  font-size: 2rem;
+}
+
+.fixed-action-btn ul{
+  text-align: right;
+  bottom: 30px;
+}
+
+.fab-item {
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(247, 255, 0, .9);
+  border-radius: 0;  
+  transition: .3s;
+  width: auto;
+  padding: 0 4px;
+}
+
+/****** Custom ******/
+.about {
+  background: linear-gradient(300deg, #ff503c calc(50%), #fff 50%);
+
+}
 
 
 /****** Video ******/
@@ -87,9 +122,9 @@ a {
 #muter{
   position: absolute;
   top: 95%;
-  left: 95%;
+  left: 93%;
   transform: translate(-50%,-50%);
-  font-size: 2em;
+  font-size: 1.5em;
 }
     
  .cover .hi  span {
@@ -136,5 +171,16 @@ a {
   .cover-item{
     font-size: 27vh;
     padding: 0 2rem;
+  }
+
+  .fixed-action-btn {
+  right: 28px;
+  bottom: 28px;
+  }
+
+  #muter{
+  position: absolute;
+  top: 95%;
+  left: 95%;
   }
 }
