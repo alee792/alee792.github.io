@@ -1,13 +1,14 @@
 /*Materialize*/
+
 $(document).ready(function () {
+  $('.parallax').parallax();
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
   // Initialize collapse button
   $(".button-collapse").sideNav();
 });
 
-$(document).ready(function(){
-    $('.parallax').parallax();
-  });
-      
 
 
 $.fn.extend({

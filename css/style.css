@@ -23,6 +23,7 @@ h2 {
   font-size: 1.75rem;
   font-weight: lighter;
   line-height: 150%;
+  margin-top: 1rem;
 }
 
 p {
@@ -41,53 +42,68 @@ a {
 /****** Layout ******/
 
 .wrap {
-  padding: 2rem;
+  padding: 1rem 2rem;
   /** left and right padding only? **/
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1080px;
+  margin: auto;
 }
 
 
 /****** Override ******/
 
-.fixed-action-btn {
-  right: 0;
-  bottom: 18px;
-}
-
 .fixed-action-btn ul {
   text-align: right;
-  bottom: 30px;
-  right: 12px;
 }
 
-.btn-flat i {
+.btn-floating i {
   font-size: 2rem;
+  color: whitesmoke;
 }
 
 .fixed-action-btn ul li {
   margin: 0;
+  float: right;
 }
 
 .fab-item {
   display: inline;
   color: black;
-  padding: 0;
   margin: 0;
   background-color: rgba(247, 255, 0, .95);
+  font-size: 1.75rem;
   font-weight: 700;
   border-radius: 0;
   transition: .3s;
-  width: auto;
-  height: auto;
   padding: 0 4px;
+}
+
+.red {
+  background-color: #ff503c;
+}
+
+.carousel {
+  min-height: 500px;
 }
 
 
 /****** Custom ******/
 
 #about {
-  background: linear-gradient(300deg, #ff503c calc(50%), #fff 50%);
+  background: linear-gradient(300deg, #ff503c calc(50%), #ece9e7 50%);
+}
+
+.video-wrap {
+  /** left and right padding only? **/
+  max-width: 1080px;
+  margin: auto;
+}
+
+.redhalf {
+  background: linear-gradient(to bottom, #ff503c 60%, #ece9e7 40%)
+}
+
+.beigehalf {
+  background: linear-gradient(to left, #f3f0ed 60%, #ece9e7 40%)
 }
 
 
@@ -187,6 +203,9 @@ a {
     position: absolute;
     top: 95%;
     left: 95%;
+  }
+  .carousel {
+    min-height: 900px;
   }
 }
 
