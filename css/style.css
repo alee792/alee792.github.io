@@ -48,8 +48,22 @@ a {
   margin: auto;
 }
 
+.fatwrap {
+  padding: 1rem 2rem;
+  /** left and right padding only? **/
+  max-width: 80%;
+  margin: auto;
+  height: 500px;
+}
+
 
 /****** Override ******/
+
+.short {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+}
 
 .fixed-action-btn ul {
   text-align: right;
@@ -80,7 +94,9 @@ a {
 .red {
   background-color: #ff503c;
 }
-
+.highlighter {
+  background-color: rgba(247, 255, 0, .95);
+}
 .carousel {
   min-height: 500px;
 }
@@ -98,12 +114,12 @@ a {
   margin: auto;
 }
 
-.redhalf {
-  background: linear-gradient(to bottom, #ff503c 60%, #ece9e7 40%)
+.beigefront {
+  background: linear-gradient(to left, #f3f0ed 80%, #BCAAA4 40%)
 }
 
-.beigehalf {
-  background: linear-gradient(to left, #f3f0ed 60%, #ece9e7 40%)
+.beigeback {
+  background: linear-gradient(to left, #BCAAA4 20%, #f3f0ed 80%)
 }
 
 
@@ -190,7 +206,7 @@ a {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .cover-item {
     font-size: 27vh;
     padding: 0 2rem;
@@ -212,5 +228,14 @@ a {
 @media only screen and (min-width: 768px) {
   .cover-item {
     font-size: 15vh;
+  }
+  .wrap {
+    padding: 1rem 2rem;
+    /** left and right padding only? **/
+    max-width: 60%;
+    margin: auto;
+  }
+  .carousel {
+    min-height: 900px;
   }
 }
