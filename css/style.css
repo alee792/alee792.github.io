@@ -60,9 +60,9 @@ a {
 /****** Override ******/
 
 .short {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
 }
 
 .fixed-action-btn ul {
@@ -94,11 +94,9 @@ a {
 .red {
   background-color: #ff503c;
 }
+
 .highlighter {
   background-color: rgba(247, 255, 0, .95);
-}
-.carousel {
-  min-height: 500px;
 }
 
 
@@ -112,14 +110,15 @@ a {
   /** left and right padding only? **/
   max-width: 1080px;
   margin: auto;
+  padding: 1rem;
 }
 
 .beigefront {
-  background: linear-gradient(to left, #f3f0ed 80%, #BCAAA4 40%)
+  background: linear-gradient(to left, #f3f0ed 80%, #ff503c 40%)
 }
 
 .beigeback {
-  background: linear-gradient(to left, #BCAAA4 20%, #f3f0ed 80%)
+  background: linear-gradient(to left, #ff503c 80%, #f3f0ed 80%)
 }
 
 
@@ -157,7 +156,7 @@ a {
   width: 100%;
   padding: 0 .25rem;
   /*mq: 0 2rem*/
-  font-size: 42vw;
+  font-size: 16vh;
   /*mq: 28vh*/
 }
 
@@ -206,9 +205,42 @@ a {
   opacity: 1;
 }
 
+.social li {
+  display: inline-block;
+}
+
+
+/* label focus color */
+
+.input-field input:focus + label {
+  color: #ff503c !important;
+}
+
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #ff503c !important;
+  box-shadow: 0 1px 0 0 #ff503c !important
+}
+
+
+/* label focus color */
+
+.input-field textarea:focus + label {
+  color: #ff503c !important;
+}
+
+
+/* label underline focus color */
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #ff503c !important;
+  box-shadow: 0 1px 0 0 #ff503c !important
+}
+
 @media only screen and (max-width: 768px) {
   .cover-item {
-    font-size: 27vh;
     padding: 0 2rem;
   }
   .fixed-action-btn {
@@ -221,21 +253,17 @@ a {
     left: 95%;
   }
   .carousel {
-    min-height: 900px;
+    max-height: 400px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .cover-item {
-    font-size: 15vh;
-  }
   .wrap {
     padding: 1rem 2rem;
     /** left and right padding only? **/
-    max-width: 60%;
     margin: auto;
   }
   .carousel {
-    min-height: 900px;
+    min-height: 800px;
   }
 }
