@@ -91,13 +91,16 @@ a {
   padding: 0 4px;
 }
 
+
 /* label focus color */
+
 .input-field input:focus + label {
   color: #ff503c !important;
 }
 
 
 /* label underline focus color */
+
 .row .input-field input:focus {
   border-bottom: 1px solid #ff503c !important;
   box-shadow: 0 1px 0 0 #ff503c !important
@@ -105,16 +108,19 @@ a {
 
 
 /* label focus color */
+
 .input-field textarea:focus + label {
   color: #ff503c !important;
 }
 
 
 /* label underline focus color */
+
 .row .input-field textarea:focus {
   border-bottom: 1px solid #ff503c !important;
   box-shadow: 0 1px 0 0 #ff503c !important
 }
+
 
 /****** Custom ******/
 
@@ -148,6 +154,7 @@ a {
 .highlighter {
   background-color: rgba(247, 255, 0, .95);
 }
+
 
 /****** Video ******/
 
@@ -233,7 +240,7 @@ a {
 }
 
 @media only screen and (max-width: 425px) {
-  .cover-item{
+  .cover-item {
     font-size: 25vw;
   }
 }
@@ -265,4 +272,13 @@ a {
   .carousel {
     min-height: 800px;
   }
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format('woff'), url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
