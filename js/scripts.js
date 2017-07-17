@@ -8,6 +8,7 @@ $(document).ready(function () {
   // Initialize collapse button
   $(".button-collapse").sideNav();
 
+  $('.modal').modal();
 
   /* Custom JS */
   $("#nextBtn").click(function () {
@@ -17,8 +18,6 @@ $(document).ready(function () {
   $("#prevBtn").click(function () {
     $('.carousel').carousel('prev');
   });
-
-  $('.modal').modal();
 
 });
 
@@ -48,7 +47,7 @@ var tv,
     iv_load_policy: 3
   };
 var vid = [{
-    'videoId': 'E5MO0h7NIqY',
+    'videoId': 's4pEaXdUsPY',
     'startSeconds': 10,
     'endSeconds': 200,
     'suggestedQuality': 'hd720'
