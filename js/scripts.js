@@ -1,15 +1,29 @@
-/*Materialize*/
-
 $(document).ready(function () {
+
+  /*Materialize*/
   $('.parallax').parallax();
   $('.carousel.carousel-slider').carousel({
     fullWidth: true
   });
   // Initialize collapse button
   $(".button-collapse").sideNav();
+
+
+  /* Custom JS */
+  $("#nextBtn").click(function () {
+    $('.carousel').carousel('next');
+  });
+
+  $("#prevBtn").click(function () {
+    $('.carousel').carousel('prev');
+  });
+
+  $('.modal').modal();
+
 });
 
 
+/*Video cover controls*/
 
 $.fn.extend({
   toggleHtml: function (a, b) {

@@ -57,7 +57,7 @@ a {
 }
 
 
-/****** Override ******/
+/****** Materialize Override ******/
 
 .short {
   min-height: 380px;
@@ -91,14 +91,30 @@ a {
   padding: 0 4px;
 }
 
-.red {
-  background-color: #ff503c;
+/* label focus color */
+.input-field input:focus + label {
+  color: #ff503c !important;
 }
 
-.highlighter {
-  background-color: rgba(247, 255, 0, .95);
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #ff503c !important;
+  box-shadow: 0 1px 0 0 #ff503c !important
 }
 
+
+/* label focus color */
+.input-field textarea:focus + label {
+  color: #ff503c !important;
+}
+
+
+/* label underline focus color */
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #ff503c !important;
+  box-shadow: 0 1px 0 0 #ff503c !important
+}
 
 /****** Custom ******/
 
@@ -110,7 +126,7 @@ a {
   /** left and right padding only? **/
   max-width: 1080px;
   margin: auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .beigefront {
@@ -121,6 +137,17 @@ a {
   background: linear-gradient(to left, #ff503c 80%, #f3f0ed 80%)
 }
 
+.social li {
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff503c;
+}
+
+.highlighter {
+  background-color: rgba(247, 255, 0, .95);
+}
 
 /****** Video ******/
 
@@ -205,38 +232,10 @@ a {
   opacity: 1;
 }
 
-.social li {
-  display: inline-block;
-}
-
-
-/* label focus color */
-
-.input-field input:focus + label {
-  color: #ff503c !important;
-}
-
-
-/* label underline focus color */
-
-.row .input-field input:focus {
-  border-bottom: 1px solid #ff503c !important;
-  box-shadow: 0 1px 0 0 #ff503c !important
-}
-
-
-/* label focus color */
-
-.input-field textarea:focus + label {
-  color: #ff503c !important;
-}
-
-
-/* label underline focus color */
-
-.row .input-field textarea:focus {
-  border-bottom: 1px solid #ff503c !important;
-  box-shadow: 0 1px 0 0 #ff503c !important
+@media only screen and (max-width: 425px) {
+  .cover-item{
+    font-size: 25vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
