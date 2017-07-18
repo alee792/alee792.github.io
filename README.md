@@ -5,4 +5,4 @@ I used Materializecss to create the carousel. I did not lean heavily on the grid
 
 For a future project, I think I would use a more stripped down framework like Bulma. 
 
-View the project <a href="alee792.github.io">here</a>.
+View the project <a href="https://alee792.github.io">here</a>.
