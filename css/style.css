@@ -132,7 +132,7 @@ a {
   /** left and right padding only? **/
   max-width: 1080px;
   margin: auto;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .beigefront {
