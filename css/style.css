@@ -143,6 +143,10 @@ a {
   background: linear-gradient(to left, #ff503c 80%, #f3f0ed 80%)
 }
 
+.beige{
+  background: #f3f0ed;
+}
+
 .social li {
   display: inline-block;
 }
